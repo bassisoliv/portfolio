@@ -160,15 +160,31 @@
   /* ---------- STATS ---------- */
   .stats{padding:70px 0 20px;}
   .stats-grid{
-    display:grid; grid-template-columns:repeat(4,1fr); gap:24px;
+    display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
   }
-  @media (max-width:760px){ .stats-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:760px){ .stats-grid{grid-template-columns:1fr;} }
   .stat{
     background:var(--cream-2); border:1px solid var(--line); border-radius:18px;
     padding:26px 22px;
   }
   .stat b{font-family:'Playfair Display',serif; font-size:34px; display:block; color:var(--coral-dark);}
   .stat span{font-size:13.5px; color:var(--ink-soft); font-weight:600;}
+
+  /* ---------- PUBLICO ---------- */
+  .publico{padding:30px 0 70px;}
+  .publico-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:24px;
+  }
+  @media (max-width:700px){ .publico-grid{grid-template-columns:1fr;} }
+  .publico-card{
+    background:var(--cream-2); border:1px solid var(--line); border-radius:18px;
+    padding:26px 24px;
+  }
+  .publico-card .eyebrow{display:block; margin-bottom:14px;}
+  .publico-row{display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;}
+  .publico-row:last-child{margin-bottom:0;}
+  .publico-row span{font-size:14.5px; color:var(--ink-soft); font-weight:600;}
+  .publico-row b{font-family:'Playfair Display',serif; font-size:19px; color:var(--coral-dark);}
 
   /* ---------- SOBRE ---------- */
   .sobre-grid{display:grid; grid-template-columns:.8fr 1.2fr; gap:60px; align-items:center;}
@@ -375,7 +391,7 @@
     </div>
 
     <div class="hero-visual reveal">
-      <span class="badge b1">+25K seguidores</span>
+      <span class="badge b1">+26K seguidores</span>
       <span class="badge badge-mint b2">Influenciadora · Criadora</span>
       <span class="badge badge-coral b3">aprovado sem revisão ✓</span>
 
@@ -389,7 +405,7 @@
 &nbsp;&nbsp;<span class="k">"nome"</span>: <span class="s">"Bruna Assis"</span>,<br>
 &nbsp;&nbsp;<span class="k">"instagram"</span>: <span class="s">"@bruassiss"</span>,<br>
 &nbsp;&nbsp;<span class="k">"base"</span>: <span class="s">"Jacareí, SP"</span>,<br>
-&nbsp;&nbsp;<span class="k">"seguidores"</span>: <span class="s">"25K+"</span>,<br>
+&nbsp;&nbsp;<span class="k">"seguidores"</span>: <span class="s">"26,3K+"</span>,<br>
 &nbsp;&nbsp;<span class="k">"identidade"</span>: <span class="s">"criadora de conteúdo em tempo integral"</span>,<br>
 &nbsp;&nbsp;<span class="k">"nichos"</span>: <span class="s">"lifestyle · receitas · beleza · autocuidado · organização · tech"</span>,<br>
 &nbsp;&nbsp;<span class="k">"contato"</span>: <span class="s">"bassisoliv@gmail.com"</span><span class="caret"></span><br>
@@ -410,10 +426,24 @@
 
 <section class="stats">
   <div class="wrap stats-grid">
-    <div class="stat reveal"><b>25,7K</b><span>seguidores no Instagram</span></div>
-    <div class="stat reveal"><b>849,9K</b><span>visualizações nos últimos 30 dias</span></div>
-    <div class="stat reveal"><b>55,9K</b><span>interações nos últimos 30 dias</span></div>
+    <div class="stat reveal"><b>26,3K</b><span>seguidores no Instagram</span></div>
+    <div class="stat reveal"><b>1M</b><span>visualizações nos últimos 30 dias</span></div>
     <div class="stat reveal"><b>7K+</b><span>seguidores no TikTok</span></div>
+  </div>
+</section>
+
+<section class="publico">
+  <div class="wrap publico-grid">
+    <div class="publico-card reveal">
+      <span class="eyebrow">Público · Gênero</span>
+      <div class="publico-row"><span>Mulheres</span><b>84,5%</b></div>
+      <div class="publico-row"><span>Homens</span><b>15,5%</b></div>
+    </div>
+    <div class="publico-card reveal">
+      <span class="eyebrow">Público · Faixa etária predominante</span>
+      <div class="publico-row"><span>25 a 34 anos</span><b>maior faixa</b></div>
+      <div class="publico-row"><span>35 a 44 anos</span><b>2ª maior faixa</b></div>
+    </div>
   </div>
 </section>
 
@@ -429,7 +459,7 @@
       <p>Hoje, meu conteúdo transita entre receitas, food, lifestyle, beleza, autocuidado e tecnologia, sempre buscando transformar ideias, produtos e serviços em conteúdos naturais, visuais e que façam sentido para quem está assistindo.</p>
       <p>Também estou no TikTok, em <strong>@bruassiss</strong>, onde já reúno mais de 7 mil seguidores e levo essas diferentes frentes de conteúdo para uma segunda audiência.</p>
       <div class="mini-stats">
-        <div><b>25,7K</b><span>Instagram</span></div>
+        <div><b>26,3K</b><span>Instagram</span></div>
         <div><b>7K+</b><span>TikTok</span></div>
         <div><b>7 anos</b><span>de bagagem em tech</span></div>
       </div>
@@ -494,6 +524,21 @@
 
       <div class="video-card destaque">
         <span class="badge-recente">recente</span>
+        <div class="card-label"><b>Ypê</b></div>
+        <div class="embed-wrap">
+          <iframe src="https://www.instagram.com/reel/Dd2FXzfPi7I/embed" loading="lazy" scrolling="no" allowtransparency="true" allowfullscreen title="Reel Ypê"></iframe>
+        </div>
+      </div>
+
+      <div class="video-card destaque">
+        <span class="badge-recente">recente</span>
+        <div class="card-label"><b>Gallo</b> · azeite</div>
+        <div class="embed-wrap">
+          <iframe src="https://www.instagram.com/reel/DdmzqcrPP7j/embed" loading="lazy" scrolling="no" allowtransparency="true" allowfullscreen title="Reel Gallo"></iframe>
+        </div>
+      </div>
+
+      <div class="video-card destaque">
         <div class="card-label"><b>Canta Gallo</b></div>
         <div class="embed-wrap">
           <iframe src="https://www.instagram.com/reel/DdPbuPMpgg8/embed" loading="lazy" scrolling="no" allowtransparency="true" allowfullscreen title="Reel Canta Gallo"></iframe>
